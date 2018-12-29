@@ -34,19 +34,19 @@
             <div class="ten wide column">
                 <p>Hi, I’m a Digital Product Designer and Front-end Developer based in Hyderabad, India. I design clean, intuitive websites & applications.</p>
                 <div class="hidden divider"></div>
-                <p>Currently working with Param.ai. Previously at Cleartrip and Stockroom.io.  I am also maker of
-                    Filmyquote, Lowpoly.photo, La’mour.</p>
+                <p>Currently working with <a href="https://param.ai" target="_blank">Param.ai</a>. Previously at <a href="https://cleartrip.com" target="_blank">Cleartrip</a>, <a href="https://stockroom.io">Stockroom.io</a>, <a href="http://womenchangemakers.in/">Women Changemakers</a>.  I am also maker of
+                    Filmyquote, Lowpoly.photo and La’mour.</p>
             </div>
 
             <div class="six wide column">
                 <div class="follow">
                     <p>Follow me on</p>
                     <ul>
-                        <li>Dribbble</li>
-                        <li>Linkedin</li>
-                        <li>Github</li>
-                        <li>Twitter</li>
-                        <li>Facebook</li>
+                        <li><a>Dribbble</a></li>
+                        <li><a>Linkedin</a></li>
+                        <li><a>Github</a></li>
+                        <li><a>Twitter</a></li>
+                        <li><a>Facebook</a></li>
                     </ul>
                 </div>
 
@@ -58,7 +58,7 @@
 
     <section class="email">
         <p>Available for freelance projects</p>
-        <h4>hello@soumyabishi.co</h4>
+        <h4><a>hello@soumyabishi.co</a></h4>
     </section>
 
 
@@ -72,7 +72,8 @@
     body{
         color: #fff;
         font-family: freight-sans-pro, sans-serif;
-        background: url("img/bg.jpg") center center no-repeat #151616;
+        background-color: #1c212b;
+        /*background: url("img/bg.jpg") center center no-repeat #151616;*/
     }
 
     .intro{
@@ -134,14 +135,29 @@
         right: 50px;
         font-size: 20px;
         color: #fff;
-        border-bottom: 2px solid #4c4c4c;
-        padding-bottom: 8px;
     }
 
-    a.resume:hover{
-        border-bottom: 2px solid #ffe13e;
+    :root {
+        --mainColor: rgba(87,86,84,0.98);
     }
 
+    a {
+        background: linear-gradient(to bottom, var(--mainColor) 0%, var(--mainColor) 100%);
+        background-position: 0 100%;
+        background-repeat: repeat-x;
+        background-size: 1px 1px;
+        color: #fff !important;
+        text-decoration: none;
+        padding-bottom: 4px;
+    }
+
+    a:hover {
+        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg id='squiggle-link' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:ev='http://www.w3.org/2001/xml-events' viewBox='0 0 20 4'%3E%3Cstyle type='text/css'%3E.squiggle{animation:shift .3s linear infinite;}@keyframes shift {from {transform:translateX(0);}to {transform:translateX(-20px);}}%3C/style%3E%3Cpath fill='none' stroke='%23ffe13e' stroke-width='1' class='squiggle' d='M0,3.5 c 5,0,5,-3,10,-3 s 5,3,10,3 c 5,0,5,-3,10,-3 s 5,3,10,3'/%3E%3C/svg%3E");
+        background-position: 0 100%;
+        background-size: auto 6px;
+        background-repeat: repeat-x;
+        text-decoration: none;
+    }
 
 
     ul{
