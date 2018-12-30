@@ -9,6 +9,8 @@
     <link href="favicon.png" rel="icon" type="image/x-icon">
     <link rel="stylesheet" href="css/semantic.min.css">
     <link rel="stylesheet" href="https://use.typekit.net/fde6xbm.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+
 </head>
 <body>
 
@@ -22,10 +24,20 @@
 <div class="ui container">
 
     <section class="intro">
+
+        <img class="logo_mobile" src="img/logo.png">
+
+
         <img class="design" src="img/design.svg">
 
                 <h1>Soumya <br>Ranjan Bishi.</h1>
                  <h3>Designer and Developer</h3>
+
+        <div class="resume_mobile_wrapper">
+            <a href="" class="resume_mobile">Download Resume</a>
+        </div>
+
+
 
     </section>
 
@@ -34,6 +46,7 @@
     <section class="about">
         <div class="ui grid">
             <div class="ten wide computer sixteen wide mobile column">
+                <p class="heading">About me</p>
                 <p>Hi, I’m a Digital Product Designer and Front-end Developer based in Hyderabad, India. I design clean, intuitive websites & applications.</p>
                 <div class="hidden divider"></div>
                 <p>Currently working with <a href="https://param.ai">Param.ai</a>. Previously at <a href="https://cleartrip.com">Cleartrip</a>, <a href="https://stockroom.io">Stockroom.io</a>, <a href="http://womenchangemakers.in/">Women Changemakers</a>.  I am also maker of
@@ -42,13 +55,13 @@
 
             <div class="six wide computer sixteen wide mobile column">
                 <div class="follow">
-                    <p>Follow me on</p>
+                    <p class="heading">Follow me on</p>
                     <ul>
-                        <li><a>Dribbble</a></li>
-                        <li><a>Linkedin</a></li>
-                        <li><a>Github</a></li>
-                        <li><a>Twitter</a></li>
-                        <li><a>Facebook</a></li>
+                        <li><a><i class="fab fa-dribbble"></i>Dribbble</a></li>
+                        <li><a><i class="fab fa-linkedin-in"></i>Linkedin</a></li>
+                        <li><a><i class="fab fa-github"></i>Github</a></li>
+                        <li><a><i class="fab fa-twitter"></i>Twitter</a></li>
+                        <li><a><i class="fab fa-facebook-square"></i>Facebook</a></li>
                     </ul>
                 </div>
 
@@ -59,7 +72,7 @@
 
 
     <section class="email">
-        <p>Available for freelance projects</p>
+        <p class="heading">Available for freelance projects</p>
         <h4><a>hello@soumyabishi.co</a></h4>
 
         <img class="design_footer" src="img/design_footer.svg">
@@ -119,6 +132,9 @@
     p{
         font-size: 28px;
     }
+    p.heading{
+        opacity: 0.5;
+    }
 
     .email h4{
         font-size: 66px;
@@ -129,7 +145,7 @@
     }
 
     .email p{
-        margin-bottom: 0 !important;
+        margin-bottom: 10px !important;
     }
 
 
@@ -141,6 +157,10 @@
         left: 50px;
     }
 
+    .logo_mobile{
+        display: none;
+    }
+
 
 
 
@@ -148,6 +168,14 @@
         position: fixed;
         top: 50px;
         right: 50px;
+        font-size: 20px;
+        color: #fff;
+    }
+
+    .resume_mobile_wrapper{
+        display: none;
+    }
+    a.resume_mobile{
         font-size: 20px;
         color: #fff;
     }
@@ -182,10 +210,20 @@
 
     li{
         list-style: none;
-        font-size: 18px;
-        padding-left: 30px;
-        margin-bottom: 20px;
+        font-size: 20px;
+        margin-bottom: 30px;
+    }
 
+    li a{
+        background:  none !important;
+    }
+
+    li a:hover{
+        color: #ffe13e !important;
+    }
+
+    li i{
+        margin-right: 10px;
     }
 
     li:last-child{
@@ -223,6 +261,9 @@
         .email h4{
             font-size: 55px;
         }
+        h3{
+            font-size: 32px;
+        }
     }
 
 
@@ -253,6 +294,9 @@
             margin-top: 40px;
             padding-left: 0;
         }
+        h3{
+            font-size: 28px;
+        }
 
     }
 
@@ -267,9 +311,7 @@
             padding: 70px 0;
         }
         .design{
-            left: 100px;
-            width: 340px;
-            overflow: hidden;
+            display: none;
         }
 
         .logo, .resume{
@@ -290,6 +332,18 @@
         .follow{
             margin-top: 40px;
             padding-left: 0;
+        }
+        h3{
+            font-size: 24px;
+        }
+        .logo_mobile{
+            display: block;
+            width: 88px;
+            margin-bottom: 30px;
+        }
+        .resume_mobile_wrapper{
+            display: block;
+            margin-top: 33px;
         }
 
     }
