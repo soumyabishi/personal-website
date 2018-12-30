@@ -3,10 +3,9 @@
 <html class="no-js" lang="">
 <head>
     <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title>Soumya Ranjan Bishi | Designer and Developer</title>
     <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="favicon.png" rel="icon" type="image/x-icon">
     <link rel="stylesheet" href="css/semantic.min.css">
     <link rel="stylesheet" href="https://use.typekit.net/fde6xbm.css">
@@ -18,12 +17,15 @@
 <img class="logo" src="img/logo.png">
 <a href="" class="resume">Download Resume</a>
 
+
+
 <div class="ui container">
 
     <section class="intro">
+        <img class="design" src="img/design.svg">
 
                 <h1>Soumya <br>Ranjan Bishi.</h1>
-                 <h3>Designer & Developer</h3>
+                 <h3>Designer and Developer</h3>
 
     </section>
 
@@ -31,14 +33,14 @@
 
     <section class="about">
         <div class="ui grid">
-            <div class="ten wide column">
+            <div class="ten wide computer sixteen wide mobile column">
                 <p>Hi, I’m a Digital Product Designer and Front-end Developer based in Hyderabad, India. I design clean, intuitive websites & applications.</p>
                 <div class="hidden divider"></div>
-                <p>Currently working with <a href="https://param.ai" target="_blank">Param.ai</a>. Previously at <a href="https://cleartrip.com" target="_blank">Cleartrip</a>, <a href="https://stockroom.io">Stockroom.io</a>, <a href="http://womenchangemakers.in/">Women Changemakers</a>.  I am also maker of
+                <p>Currently working with <a href="https://param.ai">Param.ai</a>. Previously at <a href="https://cleartrip.com">Cleartrip</a>, <a href="https://stockroom.io">Stockroom.io</a>, <a href="http://womenchangemakers.in/">Women Changemakers</a>.  I am also maker of
                     Filmyquote, Lowpoly.photo and La’mour.</p>
             </div>
 
-            <div class="six wide column">
+            <div class="six wide computer sixteen wide mobile column">
                 <div class="follow">
                     <p>Follow me on</p>
                     <ul>
@@ -59,6 +61,9 @@
     <section class="email">
         <p>Available for freelance projects</p>
         <h4><a>hello@soumyabishi.co</a></h4>
+
+        <img class="design_footer" src="img/design_footer.svg">
+
     </section>
 
 
@@ -78,10 +83,18 @@
 
     .intro{
         padding: 200px 0;
+        position: relative;
+    }
+
+    .design{
+        position: absolute;
+        top: 0px;
+        left: 330px;
     }
 
     .about, .email{
         padding-bottom: 200px;
+        position: relative;
     }
 
     .follow{
@@ -93,7 +106,6 @@
         /*letter-spacing: -0.05em;*/
         font-family: philosopher, sans-serif;
         color: #FFFFFF;
-        line-height: 118px;
 
     }
 
@@ -128,6 +140,9 @@
         top: 50px;
         left: 50px;
     }
+
+
+
 
     a.resume{
         position: fixed;
@@ -177,11 +192,124 @@
         border: none;
     }
 
+    .design_footer{
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
 
 
-    @media only screen and (max-width: 64.063em) {
+    @media only screen and (max-width: 1199px) and (min-width: 992px){
+        h1{
+            font-size: 80px;
+        }
+        p{
+            font-size: 24px;
+        }
+        .intro{
+            padding: 150px 0;
+        }
+        .design{
+            width: 500px;
+        }
+
+        .design_footer{
+            width: 400px;
+        }
+
+        .about, .email{
+            padding-bottom: 150px;
+        }
+        .email h4{
+            font-size: 55px;
+        }
+    }
+
+
+    @media only screen and (max-width: 991px) and (min-width: 768px){
+        h1{
+            font-size: 70px;
+        }
+        p{
+            font-size: 22px;
+        }
+        .intro{
+            padding: 120px 0;
+        }
+        .design{
+            left: 190px;
+            width: 430px;
+        }
+        .design_footer{
+            width: 330px;
+        }
+        .about, .email{
+            padding-bottom: 120px;
+        }
+        .email h4{
+            font-size: 50px;
+        }
+        .follow{
+            margin-top: 40px;
+            padding-left: 0;
+        }
 
     }
+
+    @media only screen and (max-width: 767px){
+        h1{
+            font-size: 50px;
+        }
+        p{
+            font-size: 20px;
+        }
+        .intro{
+            padding: 70px 0;
+        }
+        .design{
+            left: 100px;
+            width: 340px;
+            overflow: hidden;
+        }
+
+        .logo, .resume{
+            display: none;
+        }
+        .design_footer{
+            width: 270px;
+            overflow: hidden;
+        }
+        .about, .email{
+            padding-bottom: 80px;
+        }
+
+        .email h4{
+            font-size: 40px;
+        }
+
+        .follow{
+            margin-top: 40px;
+            padding-left: 0;
+        }
+
+    }
+
+
+
+
+
+    /*@media only screen and (min-width: 64.063em) and (max-width: 90em) {*/
+
+    /*}*/
+
+    /*@media only screen and (min-width: 40.063em) and (max-width: 64em) {*/
+        /*h1{*/
+            /*font-size: 50px;*/
+
+        /*}*/
+
+
+    /*}*/
 </style>
 </body>
 </html>
